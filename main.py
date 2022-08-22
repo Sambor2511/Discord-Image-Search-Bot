@@ -23,7 +23,7 @@ async def showpic(ctx, *, search):
         q=f"{search}", cx="<YOUR SEARCH ENGINE ID>", searchType="image"
     ).execute()
     url = result["items"][ran]["link"]
-    embed1 = discord.Embed(title=f"Here Your Image ({search}) Feature made by BOR NATION on YT")
+    embed1 = discord.Embed(title=f"Here Your Image ({search}) ")
     embed1.set_image(url=url)
     await ctx.send(embed=embed1)
 
